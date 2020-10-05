@@ -32,7 +32,9 @@ set writebackup
 autocmd BufNewFile *.cpp 0r $HOME\vimfiles\skeleton.cpp
 "the below line compiles and runs cpp files in windows
 "autocmd vimEnter *.cpp map <F8> :w <CR> :!g++ --std=c++17 % -o %:r <CR> :!%:r.exe <CR>
-autocmd vimEnter *.cpp map <F8> :w <CR> :!g++ --std=c++17 % -o %:r <CR> :!%:r.exe <CR> 
+autocmd vimEnter *.cpp map <F8> :w <CR> :!g++ --std=c++17 % -o %:r <CR> :!%:r.exe <CR>
+autocmd vimEnter *.cpp map <F5> :w <CR> :!g++ --std=c++17 % -o %:r <CR>
+autocmd vimEnter *.cpp map <F6> :w <CR> :!%:r.exe <CR>
 "the below line will work for linux
 "autocmd vimEnter *.cpp map <F8> :w <CR> :!g++ --std=c++17 % -o %:r <CR> :!%:r <CR>
 
